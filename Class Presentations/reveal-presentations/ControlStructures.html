@@ -58,23 +58,27 @@
 						</li>
 						<li>
 							<input type="checkbox" id="goal2"/>
-							<label for="goal2">If(-Else) Statement</label>
+							<label for="goal2">If(-Else) &amp; Switch</label>
 						</li>
 						<li>
 							<input type="checkbox" id="goal3"/>
-							<label for="goal3">For Loop</label>
+							<label for="goal3">Making it Work</label>
 						</li>
 						<li>
 							<input type="checkbox" id="goal4"/>
-							<label for="goal4">While Loop</label>
+							<label for="goal4">For Loop</label>
 						</li>
 						<li>
 							<input type="checkbox" id="goal5"/>
-							<label for="goal5">Do-While Loop</label>
+							<label for="goal5">While Loop</label>
 						</li>
 						<li>
 							<input type="checkbox" id="goal6"/>
-							<label for="goal6">Switch</label>
+							<label for="goal6">Do-While Loop</label>
+						</li>
+						<li>
+							<input type="checkbox" id="goal7"/>
+							<label for="goal7">Extra: If-Statements &amp; Switch</label>
 						</li>
 					</ul>
 				</section>
@@ -186,7 +190,6 @@
 				<iframe width="854" height="480" src="https://www.youtube.com/embed/qG9ZWUitFik" frameborder="0" allowfullscreen></iframe>
 			</section>
 
-
 			<section>
 				<h2>Goals</h2>
 				<ul class="checklist">
@@ -196,23 +199,27 @@
 					</li>
 					<li>
 						<input type="checkbox" id="goal2"/>
-						<label for="goal2">If(-Else) Statement</label>
+						<label for="goal2">If(-Else) &amp; Switch</label>
 					</li>
 					<li>
 						<input type="checkbox" id="goal3"/>
-						<label for="goal3">For Loop</label>
+						<label for="goal3">Making it Work</label>
 					</li>
 					<li>
 						<input type="checkbox" id="goal4"/>
-						<label for="goal4">While Loop</label>
+						<label for="goal4">For Loop</label>
 					</li>
 					<li>
 						<input type="checkbox" id="goal5"/>
-						<label for="goal5">Do-While Loop</label>
+						<label for="goal5">While Loop</label>
 					</li>
 					<li>
 						<input type="checkbox" id="goal6"/>
-						<label for="goal6">Switch</label>
+						<label for="goal6">Do-While Loop</label>
+					</li>
+					<li>
+						<input type="checkbox" id="goal7"/>
+						<label for="goal7">Extra: If-Statements &amp; Switch</label>
 					</li>
 				</ul>
 			</section>
@@ -221,49 +228,66 @@
 				## If(-Else) Statement
 			</section>
 
-			<section>
-				<h2>If Statement</h2>
-				<section data-markdown>
-					```javascript
-					if (totalPoints > 99) {
-						congratulateWinner();
-					}
-					```
-					</section>
+			<section data-markdown>
+				## It Depends
+				We’ve reviewed some simple functions that printed on the console or popped up on the screen.
+				<br>
+				But, what if you were only supposed to print if the name the person entered is longer than 2 characters?
 			</section>
 
 			<section data-markdown>
-				## If Statement
-				* Evaluates (checks) a condition
-				* If the condition is true, the following block is executed
-			</section>
+				## If, Else, Else If
 
-			<section>
-				<h2>If-Else Statement</h2>
-				<section data-markdown>
-					```javascript
-					if (gradeLevel === "Senior") {
-						sayAlmostDone();
-					} else {
-						sayStayInSchool();
-					}
-					```
-					</section>
+				**if** is used to evaluate if a condition is true. If it is then the code inside it will be executed.
+				<br>
+				**else if** is used to add another conditional to be evaluated for true. If it is true then the code inside will be executed.
+				<br>
+				**else** is used to execute code when the previous if condition is false. If it is false then the code inside will be executed.
+
+				http://www.w3schools.com/jsref/jsref_if.asp
 			</section>
 
 			<section data-markdown>
-				## If-Else Statement
-				* Evaluates (checks) a condition
-				* If the condition is true, executes the next block of code
-				* Executes a different block if the condition is false
+				## Five Minutes of Struggle
+				Update the onclick2.js file to only add the name to the page if the user entered text greater than 2 characters.
+
+				<br>
+				<br>
+				Hint: http://www.w3schools.com/js/js_string_methods.asp
+
 			</section>
 
-			<section>
-				<h2>Try it yourself!</h2>
-				<p>Make an alert statement pop up when a particular condition is met.</p>
-				<aside class="notes">Good way to start: define a variable first, and
-					use the variable in the if-statement's condition
-				</aside>
+			<section data-markdown>
+				## Switch
+				Sometimes you have to evaluate a number of conditions for one function. In times like those, instead of if..else if… else if… else if… else, you can use a switch statement.
+
+				<br>
+				<br>
+				**switch** evaluates if one or more multiple conditions are true. If so, the code inside the block will be executed.
+			</section>
+
+			<section data-markdown>
+				## What is this function doing?
+
+				```javascript
+				Function favoriteColor(color){
+					switch(color){
+						case “blue”:
+						document.body.style.backgroundColor = “blue”;
+						break; //this stops the next case from being evaluated.
+						case “red”:
+						document.body.style.backgroundColor = “red”;
+						Break;
+						case “yellow”:
+						document.body.style.backgroundColor = “yellow”;
+						break;
+					}
+				}```
+
+				When color === blue, what happens?
+				<br>
+				Cite: http://www.w3schools.com/jsref/jsref_switch.asp
+
 			</section>
 
 			<section>
@@ -275,23 +299,73 @@
 					</li>
 					<li>
 						<input type="checkbox" id="goal2" checked/>
-						<label for="goal2">If(-Else) Statement</label>
+						<label for="goal2">If(-Else) &amp; Switch</label>
 					</li>
 					<li>
 						<input type="checkbox" id="goal3"/>
-						<label for="goal3">For Loop</label>
+						<label for="goal3">Making it Work</label>
 					</li>
 					<li>
 						<input type="checkbox" id="goal4"/>
-						<label for="goal4">While Loop</label>
+						<label for="goal4">For Loop</label>
 					</li>
 					<li>
 						<input type="checkbox" id="goal5"/>
-						<label for="goal5">Do-While Loop</label>
+						<label for="goal5">While Loop</label>
 					</li>
 					<li>
 						<input type="checkbox" id="goal6"/>
-						<label for="goal6">Switch</label>
+						<label for="goal6">Do-While Loop</label>
+					</li>
+					<li>
+						<input type="checkbox" id="goal7"/>
+						<label for="goal7">Extra: If-Statements &amp; Switch</label>
+					</li>
+				</ul>
+			</section>
+
+			<section data-markdown>
+				## Open the simple_calc_example.html
+				* Try it out
+				* Now make the other operations work using the function stubs provided
+				* Add comments about how you would iterate on this web page to make it better
+			</section>
+
+			<section data-markdown>
+				## Open machineOps.html
+				* Add javascript to complete the challenges in each div
+			</section>
+
+			<section>
+				<h2>Goals</h2>
+				<ul class="checklist">
+					<li>
+						<input type="checkbox" id="goal1" checked/>
+						<label for="goal1">What are control structures?</label>
+					</li>
+					<li>
+						<input type="checkbox" id="goal2" checked/>
+						<label for="goal2">If(-Else) &amp; Switch</label>
+					</li>
+					<li>
+						<input type="checkbox" id="goal3" checked/>
+						<label for="goal3">Making it Work</label>
+					</li>
+					<li>
+						<input type="checkbox" id="goal4"/>
+						<label for="goal4">For Loop</label>
+					</li>
+					<li>
+						<input type="checkbox" id="goal5"/>
+						<label for="goal5">While Loop</label>
+					</li>
+					<li>
+						<input type="checkbox" id="goal6"/>
+						<label for="goal6">Do-While Loop</label>
+					</li>
+					<li>
+						<input type="checkbox" id="goal7"/>
+						<label for="goal7">Extra: If-Statements &amp; Switch</label>
 					</li>
 				</ul>
 			</section>
@@ -365,27 +439,30 @@
 					</li>
 					<li>
 						<input type="checkbox" id="goal2" checked/>
-						<label for="goal2">If(-Else) Statement</label>
+						<label for="goal2">If(-Else) &amp; Switch</label>
 					</li>
 					<li>
 						<input type="checkbox" id="goal3" checked/>
-						<label for="goal3">For Loop</label>
+						<label for="goal3">Making it Work</label>
 					</li>
 					<li>
-						<input type="checkbox" id="goal4"/>
-						<label for="goal4">While Loop</label>
+						<input type="checkbox" id="goal4" checked/>
+						<label for="goal4">For Loop</label>
 					</li>
 					<li>
 						<input type="checkbox" id="goal5"/>
-						<label for="goal5">Do-While Loop</label>
+						<label for="goal5">While Loop</label>
 					</li>
 					<li>
 						<input type="checkbox" id="goal6"/>
-						<label for="goal6">Switch</label>
+						<label for="goal6">Do-While Loop</label>
+					</li>
+					<li>
+						<input type="checkbox" id="goal7"/>
+						<label for="goal7">Extra: If-Statements &amp; Switch</label>
 					</li>
 				</ul>
 			</section>
-
 			<section data-markdown>
 				## In a Little While...
 			</section>
@@ -424,23 +501,27 @@
 					</li>
 					<li>
 						<input type="checkbox" id="goal2" checked/>
-						<label for="goal2">If(-Else) Statement</label>
+						<label for="goal2">If(-Else) &amp; Switch</label>
 					</li>
 					<li>
 						<input type="checkbox" id="goal3" checked/>
-						<label for="goal3">For Loop</label>
+						<label for="goal3">Making it Work</label>
 					</li>
 					<li>
 						<input type="checkbox" id="goal4" checked/>
-						<label for="goal4">While Loop</label>
+						<label for="goal4">For Loop</label>
 					</li>
 					<li>
-						<input type="checkbox" id="goal5"/>
-						<label for="goal5">Do-While Loop</label>
+						<input type="checkbox" id="goal5" checked/>
+						<label for="goal5">While Loop</label>
 					</li>
 					<li>
 						<input type="checkbox" id="goal6"/>
-						<label for="goal6">Switch</label>
+						<label for="goal6">Do-While Loop</label>
+					</li>
+					<li>
+						<input type="checkbox" id="goal7"/>
+						<label for="goal7">Extra: If-Statements &amp; Switch</label>
 					</li>
 				</ul>
 			</section>
@@ -482,29 +563,78 @@
 					</li>
 					<li>
 						<input type="checkbox" id="goal2" checked/>
-						<label for="goal2">If(-Else) Statement</label>
+						<label for="goal2">If(-Else) &amp; Switch</label>
 					</li>
 					<li>
 						<input type="checkbox" id="goal3" checked/>
-						<label for="goal3">For Loop</label>
+						<label for="goal3">Making it Work</label>
 					</li>
 					<li>
 						<input type="checkbox" id="goal4" checked/>
-						<label for="goal4">While Loop</label>
+						<label for="goal4">For Loop</label>
 					</li>
 					<li>
 						<input type="checkbox" id="goal5" checked/>
-						<label for="goal5">Do-While Loop</label>
+						<label for="goal5">While Loop</label>
 					</li>
 					<li>
-						<input type="checkbox" id="goal6"/>
-						<label for="goal6">Switch</label>
+						<input type="checkbox" id="goal6" checked/>
+						<label for="goal6">Do-While Loop</label>
+					</li>
+					<li>
+						<input type="checkbox" id="goal7"/>
+						<label for="goal7">Extra: If-Statements &amp; Switch</label>
 					</li>
 				</ul>
 			</section>
 
 			<section data-markdown>
-				## Switch (Does anyone know that Will Smith song? How old are y'all?)
+				## Extra: If Statements &amp; Switch (Does anyone know that Will Smith song?)
+			</section>
+
+			<section>
+				<h2>If Statement</h2>
+				<section data-markdown>
+					```javascript
+					if (totalPoints > 99) {
+						congratulateWinner();
+					}
+					```
+					</section>
+			</section>
+
+			<section data-markdown>
+				## If Statement
+				* Evaluates (checks) a condition
+				* If the condition is true, the following block is executed
+			</section>
+
+			<section>
+				<h2>If-Else Statement</h2>
+				<section data-markdown>
+					```javascript
+					if (gradeLevel === "Senior") {
+						sayAlmostDone();
+					} else {
+						sayStayInSchool();
+					}
+					```
+					</section>
+			</section>
+
+			<section data-markdown>
+				## If-Else Statement
+				* Evaluates (checks) a condition
+				* If the condition is true, executes the next block of code
+				* Executes a different block if the condition is false
+			</section>
+
+			<section>
+				<h2>Try it yourself!</h2>
+				<p>Make an alert statement pop up when a particular condition is met.</p>
+				<aside class="notes">Good way to start: define a variable first, and
+					use the variable in the if-statement's condition
+				</aside>
 			</section>
 
 			<section>
